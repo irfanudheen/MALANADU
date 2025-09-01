@@ -366,6 +366,19 @@
             loader.style.visibility = "hidden";
         }, 2000); // stays 2 seconds after page load
         });
+
+        document.querySelectorAll("#mainmenu a").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault(); // stop immediate navigation
+    const loader = document.getElementById("page-loader");
+    loader.classList.add("active");
+
+    const url = this.getAttribute("href");
+    setTimeout(() => {
+      window.location.href = url;
+    }, 1500); // 1.5s delay with loader
+  });
+});
     </script>
 
 </body>
