@@ -437,9 +437,9 @@ header.smaller.scroll-light {
 header.header-light.clone.smaller.menu-open {
   height: auto !important;
 }
-header.header-light.menu-open {
+/* header.header-light.menu-open {
   height: auto !important;
-}
+} */
 
 header.smaller.scroll-blur {
   background: rgba(0, 0, 0, .5);
