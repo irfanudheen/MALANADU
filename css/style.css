@@ -434,6 +434,12 @@ header .logo-mobile {
 header.smaller.scroll-light {
   background: #ffffff;
 }
+header.header-light.clone.smaller.menu-open {
+  height: auto !important;
+}
+header.header-light.menu-open {
+  height: auto !important;
+}
 
 header.smaller.scroll-blur {
   background: rgba(0, 0, 0, .5);
@@ -1278,7 +1284,7 @@ header:not(.header-mobile) #mainmenu>li:hover ul.mega {
 }
 
 #menu-btn.menu-open:before{
-  /* content: "\f068"; */
+  content: "\f068";
 }
 
 .rtl #menu-btn {
